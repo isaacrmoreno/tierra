@@ -52,6 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				E4DCB0C428F138F300A19FD5 /* tierra--iOS--Info.plist */,
+				E4DCB0C828F13B4700A19FD5 /* README.md */,
 				E4D37AB128EF7292004FA7F5 /* Shared */,
 				E4D37AC028EF7294004FA7F5 /* macOS */,
 				E4D37ABA28EF7294004FA7F5 /* Products */,
@@ -62,7 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				E4D37AB228EF7292004FA7F5 /* tierraApp.swift */,
-				E4DCB0C828F13B4700A19FD5 /* README.md */,
 				E4D37AB328EF7292004FA7F5 /* ContentView.swift */,
 				E4DCB0C928F13FD300A19FD5 /* MapBoxMapView.swift */,
 				E4D37AB428EF7294004FA7F5 /* Assets.xcassets */,

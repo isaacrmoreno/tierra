@@ -9,6 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        Text("Hello :)")
+        Image(systemName: "map")
+            .font(.system(size: 30.0))
         MapBoxMapView()
     }
 }

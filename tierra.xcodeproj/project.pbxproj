@@ -13,6 +13,8 @@
 		E4D37AC528EF7294004FA7F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D37AB328EF7292004FA7F5 /* ContentView.swift */; };
 		E4D37AC628EF7294004FA7F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4D37AB428EF7294004FA7F5 /* Assets.xcassets */; };
 		E4D37AC728EF7294004FA7F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4D37AB428EF7294004FA7F5 /* Assets.xcassets */; };
+		E4DCB0C728F13A1700A19FD5 /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = E4DCB0C628F13A1700A19FD5 /* MapboxMaps */; };
+		E4DCB0CA28F13FD400A19FD5 /* MapBoxMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DCB0C928F13FD300A19FD5 /* MapBoxMapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,9 @@
 		E4D37AB928EF7294004FA7F5 /* tierra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tierra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4D37ABF28EF7294004FA7F5 /* tierra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tierra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4D37AC128EF7294004FA7F5 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		E4DCB0C428F138F300A19FD5 /* tierra--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "tierra--iOS--Info.plist"; sourceTree = "<group>"; };
+		E4DCB0C828F13B4700A19FD5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E4DCB0C928F13FD300A19FD5 /* MapBoxMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBoxMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4DCB0C728F13A1700A19FD5 /* MapboxMaps in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +51,7 @@
 		E4D37AAC28EF7292004FA7F5 = {
 			isa = PBXGroup;
 			children = (
+				E4DCB0C428F138F300A19FD5 /* tierra--iOS--Info.plist */,
 				E4D37AB128EF7292004FA7F5 /* Shared */,
 				E4D37AC028EF7294004FA7F5 /* macOS */,
 				E4D37ABA28EF7294004FA7F5 /* Products */,
@@ -55,7 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				E4D37AB228EF7292004FA7F5 /* tierraApp.swift */,
+				E4DCB0C828F13B4700A19FD5 /* README.md */,
 				E4D37AB328EF7292004FA7F5 /* ContentView.swift */,
+				E4DCB0C928F13FD300A19FD5 /* MapBoxMapView.swift */,
 				E4D37AB428EF7294004FA7F5 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -94,6 +103,9 @@
 			dependencies = (
 			);
 			name = "tierra (iOS)";
+			packageProductDependencies = (
+				E4DCB0C628F13A1700A19FD5 /* MapboxMaps */,
+			);
 			productName = "tierra (iOS)";
 			productReference = E4D37AB928EF7294004FA7F5 /* tierra.app */;
 			productType = "com.apple.product-type.application";
@@ -142,6 +154,9 @@
 				Base,
 			);
 			mainGroup = E4D37AAC28EF7292004FA7F5;
+			packageReferences = (
+				E4DCB0C528F13A1700A19FD5 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */,
+			);
 			productRefGroup = E4D37ABA28EF7294004FA7F5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -178,6 +193,7 @@
 			files = (
 				E4D37AC428EF7294004FA7F5 /* ContentView.swift in Sources */,
 				E4D37AC228EF7294004FA7F5 /* tierraApp.swift in Sources */,
+				E4DCB0CA28F13FD400A19FD5 /* MapBoxMapView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +328,8 @@
 				DEVELOPMENT_TEAM = 672Z6Y47KB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "tierra--iOS--Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your precise location is used to calculate turn-by-turn directions, show your location on the map, and help improve the map.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -342,6 +360,8 @@
 				DEVELOPMENT_TEAM = 672Z6Y47KB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "tierra--iOS--Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your precise location is used to calculate turn-by-turn directions, show your location on the map, and help improve the map.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -450,6 +470,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E4DCB0C528F13A1700A19FD5 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mapbox/mapbox-maps-ios.git";
+			requirement = {
+				kind = exactVersion;
+				version = 10.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E4DCB0C628F13A1700A19FD5 /* MapboxMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E4DCB0C528F13A1700A19FD5 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */;
+			productName = MapboxMaps;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E4D37AAD28EF7292004FA7F5 /* Project object */;
 }

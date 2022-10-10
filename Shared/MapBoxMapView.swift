@@ -24,7 +24,7 @@ class MapViewController: UIViewController {
    override public func viewDidLoad() {
        super.viewDidLoad()
        let myResourceOptions = ResourceOptions(accessToken: "pk.eyJ1IjoiaXNhYWNtb3Jlbm8iLCJhIjoiY2w3OWs2d25kMDB4OTQydGtiMnl5YzI4NSJ9.nD4HjObLDhwdKeRQHa7kuQ")
-       let cameraOptions = CameraOptions(center: CLLocationCoordinate2D(latitude: 44.944099, longitude: -123.040283), zoom: 4.5, pitch: 0)
+       let cameraOptions = CameraOptions(center: CLLocationCoordinate2D(latitude: 44.944099, longitude: -123.040283), zoom: 9, pitch: 0)
        let myMapInitOptions = MapInitOptions(resourceOptions: myResourceOptions, cameraOptions: cameraOptions, styleURI: StyleURI.outdoors)
        mapView = MapView(frame: view.bounds, mapInitOptions: myMapInitOptions)
        mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]

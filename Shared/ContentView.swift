@@ -9,9 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello :)")
-        Image(systemName: "map")
-            .font(.system(size: 30.0))
+        Image(systemName: "square.stack.3d.up")
+            .font(.system(size: 28.0))
+            .padding(5)
+            .cornerRadius(5)
+            .overlay(RoundedRectangle(cornerRadius: 10)
+            .stroke(Color.black, lineWidth: 2))
         MapBoxMapView()
     }
 }

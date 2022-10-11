@@ -12,7 +12,7 @@ struct ContentView: View {
         ZStack {
             MapBoxMapView()
             StackIconView()
-//            BottomSheetView()
+            BottomSheetView()
         }
     }
 }

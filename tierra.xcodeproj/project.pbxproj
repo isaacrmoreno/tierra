@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E424E5E228F3E54500097914 /* StackIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E424E5E128F3E54500097914 /* StackIconView.swift */; };
 		E424E5E428F4D6A000097914 /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E424E5E328F4D6A000097914 /* BottomSheetView.swift */; };
+		E4262E2128F4EC6A00B6FB8C /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = E4262E2028F4EC6A00B6FB8C /* BottomSheet */; };
 		E4D37AC228EF7294004FA7F5 /* tierraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D37AB228EF7292004FA7F5 /* tierraApp.swift */; };
 		E4D37AC328EF7294004FA7F5 /* tierraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D37AB228EF7292004FA7F5 /* tierraApp.swift */; };
 		E4D37AC428EF7294004FA7F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D37AB328EF7292004FA7F5 /* ContentView.swift */; };
@@ -39,6 +40,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4DCB0C728F13A1700A19FD5 /* MapboxMaps in Frameworks */,
+				E4262E2128F4EC6A00B6FB8C /* BottomSheet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +113,7 @@
 			name = "tierra (iOS)";
 			packageProductDependencies = (
 				E4DCB0C628F13A1700A19FD5 /* MapboxMaps */,
+				E4262E2028F4EC6A00B6FB8C /* BottomSheet */,
 			);
 			productName = "tierra (iOS)";
 			productReference = E4D37AB928EF7294004FA7F5 /* tierra.app */;
@@ -162,6 +165,7 @@
 			mainGroup = E4D37AAC28EF7292004FA7F5;
 			packageReferences = (
 				E4DCB0C528F13A1700A19FD5 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */,
+				E4262E1F28F4EC6A00B6FB8C /* XCRemoteSwiftPackageReference "BottomSheet" */,
 			);
 			productRefGroup = E4D37ABA28EF7294004FA7F5 /* Products */;
 			projectDirPath = "";
@@ -486,6 +490,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		E4262E1F28F4EC6A00B6FB8C /* XCRemoteSwiftPackageReference "BottomSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lucaszischka/BottomSheet";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 		E4DCB0C528F13A1700A19FD5 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mapbox/mapbox-maps-ios.git";
@@ -497,6 +509,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		E4262E2028F4EC6A00B6FB8C /* BottomSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E4262E1F28F4EC6A00B6FB8C /* XCRemoteSwiftPackageReference "BottomSheet" */;
+			productName = BottomSheet;
+		};
 		E4DCB0C628F13A1700A19FD5 /* MapboxMaps */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E4DCB0C528F13A1700A19FD5 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */;

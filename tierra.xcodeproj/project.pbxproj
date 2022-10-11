@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E424E5E228F3E54500097914 /* StackIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E424E5E128F3E54500097914 /* StackIconView.swift */; };
+		E424E5E428F4D6A000097914 /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E424E5E328F4D6A000097914 /* BottomSheetView.swift */; };
 		E4D37AC228EF7294004FA7F5 /* tierraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D37AB228EF7292004FA7F5 /* tierraApp.swift */; };
 		E4D37AC328EF7294004FA7F5 /* tierraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D37AB228EF7292004FA7F5 /* tierraApp.swift */; };
 		E4D37AC428EF7294004FA7F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D37AB328EF7292004FA7F5 /* ContentView.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		E424E5E128F3E54500097914 /* StackIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackIconView.swift; sourceTree = "<group>"; };
+		E424E5E328F4D6A000097914 /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
 		E4D37AB228EF7292004FA7F5 /* tierraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tierraApp.swift; sourceTree = "<group>"; };
 		E4D37AB328EF7292004FA7F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E4D37AB428EF7294004FA7F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				E4D37AB228EF7292004FA7F5 /* tierraApp.swift */,
 				E4D37AB328EF7292004FA7F5 /* ContentView.swift */,
 				E424E5E128F3E54500097914 /* StackIconView.swift */,
+				E424E5E328F4D6A000097914 /* BottomSheetView.swift */,
 				E4DCB0C928F13FD300A19FD5 /* MapBoxMapView.swift */,
 				E4D37AB428EF7294004FA7F5 /* Assets.xcassets */,
 			);
@@ -195,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E424E5E228F3E54500097914 /* StackIconView.swift in Sources */,
+				E424E5E428F4D6A000097914 /* BottomSheetView.swift in Sources */,
 				E4D37AC428EF7294004FA7F5 /* ContentView.swift in Sources */,
 				E4D37AC228EF7294004FA7F5 /* tierraApp.swift in Sources */,
 				E4DCB0CA28F13FD400A19FD5 /* MapBoxMapView.swift in Sources */,
@@ -339,6 +343,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
@@ -373,6 +378,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;

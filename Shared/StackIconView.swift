@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct StackIconView : View {
+struct StackIconView: View {
     var body: some View {
         Button(action: {}) {
             Image(systemName: "square.stack.3d.up")
@@ -18,7 +18,7 @@ struct StackIconView : View {
         .background(.white)
         .cornerRadius(10)
         .overlay(RoundedRectangle(cornerRadius: 10)
-        .stroke(.black, lineWidth: 1))
+            .stroke(.black, lineWidth: 1))
         .offset(x: 150, y: -320)
     }
 }

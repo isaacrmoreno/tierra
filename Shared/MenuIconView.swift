@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MenuIconView : View {
+struct MenuIconView: View {
     var body: some View {
         Button(action: {}) {
             Image(systemName: "car.circle")
@@ -19,7 +19,7 @@ struct MenuIconView : View {
         .background(.white)
         .cornerRadius(10)
         .overlay(RoundedRectangle(cornerRadius: 10)
-        .stroke(.black, lineWidth: 2))
+            .stroke(.black, lineWidth: 2))
     }
 }
 

@@ -1,30 +1,30 @@
 //
-//  StackIconView.swift
+//  MenuIconView.swift
 //  tierra (iOS)
 //
-//  Created by Isaac Moreno on 10/9/22.
+//  Created by Isaac Moreno on 10/10/22.
 //
 
 import SwiftUI
 
-struct StackIconView : View {
+struct MenuIconView : View {
     var body: some View {
         Button(action: {}) {
-            Image(systemName: "square.stack.3d.up")
+            Image(systemName: "car.circle")
                 .foregroundColor(.black)
                 .font(.system(size: 25))
-                .padding(5)
+                .padding(.horizontal)
+                .padding(.vertical, 5)
         }
         .background(.white)
         .cornerRadius(10)
         .overlay(RoundedRectangle(cornerRadius: 10)
-        .stroke(.black, lineWidth: 1))
-        .offset(x: 150, y: -320)
+        .stroke(.black, lineWidth: 2))
     }
 }
 
-struct StackIconView_Previews: PreviewProvider {
+struct MenuIconView_Previews: PreviewProvider {
     static var previews: some View {
-        StackIconView()
+        MenuIconView()
     }
 }

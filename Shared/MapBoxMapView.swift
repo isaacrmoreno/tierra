@@ -31,3 +31,10 @@ class MapViewController: UIViewController {
        self.view.addSubview(mapView)
    }
 }
+
+
+struct MapBoxMapView_Previews: PreviewProvider {
+    static var previews: some View {
+        MapBoxMapView()
+    }
+}

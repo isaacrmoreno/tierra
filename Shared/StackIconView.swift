@@ -7,9 +7,15 @@
 
 import SwiftUI
 
+//class MenuToggle: ObservableObject {
+//    @Published var menuIsVisible: Bool = false
+//}
+
 struct StackIconView: View {
+//    @StateObject var menuToggle = MenuToggle()
+//    @State private var menuIsVisible: Bool = false
     var body: some View {
-        Button(action: {}) {
+        Button(action: { }) {
             Image(systemName: "square.stack.3d.up")
                 .foregroundColor(.black)
                 .font(.system(size: 25))
@@ -20,6 +26,7 @@ struct StackIconView: View {
         .overlay(RoundedRectangle(cornerRadius: 10)
             .stroke(.black, lineWidth: 1))
         .offset(x: 150, y: -320)
+//        let _ = print(menuIsVisible)
     }
 }
 

@@ -11,7 +11,7 @@ struct MenuView: View {
     var body: some View {
         ZStack {
             Rectangle()
-                .fill(.white)
+                .fill(.orange)
                 .frame(width: 300, height: 60)
                 .overlay(RoundedRectangle(cornerRadius: 20.0)
                     .stroke(lineWidth: 2.0))
